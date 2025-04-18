@@ -41,6 +41,12 @@ contract PixelMap {
         // HINT: Use nested loops to iterate through the dimensions
         
         // YOUR CODE HERE
+        for (uint i = 0; i < height; i++) {
+            pixelMap.push();
+            for (uint j = 0; j < width; j++) {
+                pixelMap[i].push(Pixel(255, 255, 255));
+            }
+        }
     }
 
     /**
@@ -58,6 +64,9 @@ contract PixelMap {
         // 2. Set the pixel at position (x,y) to the given RGB values
         
         // YOUR CODE HERE
+        pixelMap[y][x].r = r;
+        pixelMap[y][x].g = g;
+        pixelMap[y][x].b = b;
     }
 
     /**
@@ -73,8 +82,6 @@ contract PixelMap {
         // 2. Return the RGB values of the pixel at position (x,y)
         
         // YOUR CODE HERE
-        
-        // Replace this line with your implementation
-        return (0, 0, 0);
+        return (pixelMap[y][x].r, pixelMap[y][x].g, pixelMap[y][x].b);
     }
 }
