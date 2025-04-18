@@ -87,7 +87,7 @@ If you want to see your contract in action:
 
 ```bash
 cd foundry
-forge script script/PixelMap.sol --rpc-url https://testnet-rpc.monad.xyz/ --private-key YOUR_PRIVATE_KEY --broadcast
+forge script script/PixelMap.sol --rpc-url https://public-en-kairos.node.kaia.io --private-key PRIVATE_KEY --broadcast
 ```
 
 2. Update the contract address in `client/src/config.ts`:
